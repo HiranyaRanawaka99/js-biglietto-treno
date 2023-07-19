@@ -10,3 +10,6 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 
 ## Istruzioni
 
+1. Attraverso il metodo prompt chiedere all'utente: 
+    - km
+    - età 
