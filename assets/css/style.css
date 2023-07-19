@@ -1,0 +1,36 @@
+body {
+    background-color:rgb(255, 235, 211);
+}
+
+/*HEADER*/
+
+header {
+    background-color: brown;
+
+}
+
+.logo {
+    color: white;
+}
+
+.fa-train {
+    color: white;
+    font-size: 2rem;
+}
+
+/* MAIN */
+
+.ticket-container {
+    border: 2px solid brown;
+    height: 100vh;
+}
+
+.ticket-title {
+    display: inline-block;
+    background-color: brown;
+}
+
+.ticket-title h2 {
+    color: white;
+    padding: 6px;
+}

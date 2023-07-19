@@ -1,26 +1,38 @@
-const Km = prompt('Quanti KM devi percorrere?');
-//console.log ('KM da percorrere: ' + Km);
+alert('Benvenuto su Boolean Treni!');
+
+// Variabili 
+
+const Km = prompt('Inserisci i KM da percorrere');
+
+if (isNaN (Km)) {
+    alert('Inserisci numero')
+}
 
 const eta = prompt('Quanti anni hai?');
-//console.log ('Età: ' + eta);
+
+if (isNaN (eta)) {
+    alert ('Questo non è numero')
+}
 
 const prezzoKm = Km * 0.21;
-//console.log ('Prezzo per KM: ' + prezzoKm);
 
 
-/*Stampiamo in HTML */
 
-document.getElementById('km').innerHTML = 'KM da percorrere: ' + Km;
+//Stampo in HTML
 
-document.getElementById('eta').innerHTML = 'La tua età: ' + eta;
+document.getElementById('km').innerHTML = Km;
+
+document.getElementById('eta').innerHTML = eta;
 
 
 if (eta < 18) {
-    document.getElementById('sconto').innerHTML = 'Hai diritto a uno sconto del 20%. Il prezzo totale del tuo biglietto è: ' + (prezzoKm -((prezzoKm*20)/100)).toFixed(2) + ' €'
+    document.getElementById('sconto').innerHTML = (prezzoKm -((prezzoKm*20)/100)).toFixed(2) + '€.' 
+    document.getElementById('sconto-20').innerHTML = 'Il tuo biglietto è scontato del 20%.'
 } else if (eta > 65) {
-    document.getElementById('sconto').innerHTML = 'Hai diritto a uno sconto del 40%. Il prezzo totale del tuo biglietto è: ' + (prezzoKm -((prezzoKm*40)/100)).toFixed(2) + ' €'
+    document.getElementById('sconto').innerHTML = (prezzoKm -((prezzoKm*40)/100)).toFixed(2) + '€.'
+    document.getElementById('sconto-40').innerHTML = 'Il tuo biglietto è scontato del 40%.'
 } else {
-    document.getElementById('sconto').innerHTML = 'Il prezzo totale del tuo biglietto è: ' + prezzoKm.toFixed(2) + '€'
+    document.getElementById('sconto').innerHTML =  prezzoKm.toFixed(2) + '€'
 }
 
 
