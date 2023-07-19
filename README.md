@@ -13,3 +13,4 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 1. Attraverso il metodo prompt chiedere all'utente: 
     - km
     - età 
+2. Definire prezzo/KM
