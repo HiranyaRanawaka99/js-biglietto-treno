@@ -14,3 +14,5 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
     - km
     - età 
 2. Definire prezzo/KM
+3. Definire sconto del 20% per < 18
+4. Definire sconto del 40% per > 65
